@@ -20,9 +20,6 @@
 </head>
 
 <body class="font-ibm bg-customLight relative w-full h-full min-h-screen">
-
-
-
   <div class="wrapper relative flex flex-col w-full min-h-full overflow-x-hidden">
     <picture class="absolute top-[-110px] left-[100px] w-full overflow-hidden md:top-0 md:left-0 z-[-1]">
       <source media="(min-width:768px)" srcset="./dist/assets/bg-main-tablet.png">
@@ -30,11 +27,13 @@
     </picture>
 
     <header class="header flex">
-      <div class="flex flex-col flex-1 pl-6 mt-10">
+      <div class="flex flex-col flex-auto pl-6 mt-10">
         <div class="logo">
           <img src="./dist/assets/logo.svg" alt="">
         </div>
-        <h1 class="text-[40px] font-bold leading-[48px] -tracking-[0.45px] mt-16">We make your music sound
+        <h1
+          class="text-[40px] font-bold leading-[48px] -tracking-[0.45px] mt-16 md:text-[64px] md:leading-[64px] md:-tracking-[0.73px]">
+          We make your music sound
           extraordinary.</h1>
 
         <p class="mt-5 leading-[26px]">A system audio equalizer specifically designed for Android and iOS. Freely tune
@@ -43,8 +42,8 @@
           bass, mids, treble, gain control, reverb, and more!
         </p>
       </div>
-      <div class="header-img md:block md:relative -top-10 right-0 z-10 flex-1 hidden w-full">
-        <img src="./dist/assets/bg-pattern-1.svg" alt="" class="">
+      <div class="header-img md:block md:relative -top-10 -right-8 z-10 flex-[1_1_33%)] hidden w-full">
+        <img src="./dist/assets/bg-pattern-1.svg" alt="" class="scale-110">
       </div>
     </header>
 
