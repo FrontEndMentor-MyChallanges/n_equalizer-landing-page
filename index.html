@@ -24,20 +24,30 @@
 
 
   <div class="wrapper relative flex flex-col w-full min-h-full overflow-x-hidden">
-    <picture class="absolute top-[-110px] left-[100px] w-full overflow-hidden">
-      <img src="./dist/assets/bg-main-mobile.png" alt="" class="w-full scale-[1.5]">
+    <picture class="absolute top-[-110px] left-[100px] w-full overflow-hidden md:top-0 md:left-0 z-[-1]">
+      <source media="(min-width:768px)" srcset="./dist/assets/bg-main-tablet.png">
+      <img src="./dist/assets/bg-main-mobile.png" alt="" class="w-full scale-[1.5] md:scale-1">
     </picture>
-    <div class="logo px-6 mt-10">
-      <img src="./dist/assets/logo.svg" alt="">
-    </div>
-    <header class="header px-6 mt-16">
-      <h1 class="text-[40px] font-bold leading-[48px] -tracking-[0.45px]">We make your music sound extraordinary.</h1>
 
-      <p class="mt-5 leading-[26px]">A system audio equalizer specifically designed for Android and iOS. Freely tune the
-        way your music sounds with a professional grade parametric EQ & volume mixer. Control
-        bass, mids, treble, gain control, reverb, and more!
-      </p>
+    <header class="header flex">
+      <div class="flex flex-col flex-1 pl-6 mt-10">
+        <div class="logo">
+          <img src="./dist/assets/logo.svg" alt="">
+        </div>
+        <h1 class="text-[40px] font-bold leading-[48px] -tracking-[0.45px] mt-16">We make your music sound
+          extraordinary.</h1>
+
+        <p class="mt-5 leading-[26px]">A system audio equalizer specifically designed for Android and iOS. Freely tune
+          the
+          way your music sounds with a professional grade parametric EQ & volume mixer. Control
+          bass, mids, treble, gain control, reverb, and more!
+        </p>
+      </div>
+      <div class="header-img md:block md:relative -top-10 right-0 z-10 flex-1 hidden w-full">
+        <img src="./dist/assets/bg-pattern-1.svg" alt="" class="">
+      </div>
     </header>
+
 
     <div
       class="section bg-customDark rounded-xl -pb-10 relative flex flex-col justify-center items-center w-full mt-[166px] text-customLight">
