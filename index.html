@@ -21,22 +21,27 @@
 
 <body class="font-ibm bg-customLight relative w-full h-full min-h-screen">
   <div class="wrapper relative flex flex-col w-full min-h-full overflow-x-hidden">
-    <picture class="absolute top-[-110px] left-[100px] w-full overflow-hidden md:top-0 md:left-0 z-[-1]">
+    <picture
+      class="absolute top-[-110px] left-[100px] w-auto h-full overflow-hidden md:top-0 md:left-0 z-[-1] flex justify-center">
+      <source media="(min-width:1280px)" srcset="./dist/assets/bg-main-desktop.png">
       <source media="(min-width:768px)" srcset="./dist/assets/bg-main-tablet.png">
-      <img src="./dist/assets/bg-main-mobile.png" alt="" class="w-full scale-[1.5] md:scale-1">
+      <img src="./dist/assets/bg-main-mobile.png" alt="" class=" scale-[1.5] md:scale-1 h-auto object-cover">
     </picture>
 
-    <header class="header flex">
-      <div class="flex flex-col flex-auto pl-6 mt-10">
-        <div class="logo">
+    <header class="header flex xl:self-center self-start lg:ml-20 xl:ml-0 lg:w-[1100px]">
+      <div class="md:pl-10 flex flex-col flex-auto pl-6 lg:pl-0  mt-10 lg:max-w-[750px] xl:max-w-[1100px] self-start">
+        <div class="logo lg:mt-[62px]">
           <img src="./dist/assets/logo.svg" alt="">
         </div>
         <h1
-          class="text-[40px] font-bold leading-[48px] -tracking-[0.45px] mt-16 md:text-[64px] md:leading-[64px] md:-tracking-[0.73px] md:mt-[94px]">
+          class="text-[40px] font-bold leading-[48px] -tracking-[0.45px] mt-16 md:text-[64px] md:leading-[64px] md:-tracking-[0.73px] md:mt-[94px]  lg:mt-[127px] xl:text-[88px] lg:leading-[76px] xl:leading-[88px] xl:max-w-[850px] 2xl:max-w-[1100px]">
           We make your music sound
           extraordinary.</h1>
 
-        <p class="mt-5 leading-[26px] md:text-lg md:leading-7">A system audio equalizer specifically designed for
+        <p class="mt-5 leading-[26px] md:text-lg md:leading-7 lg:text-xl lg:leading-[34px] lg:max-w-[850px] lg:mt-10">A
+          system
+          audio equalizer
+          specifically designed for
           Android and iOS.
           Freely tune
           the
@@ -44,33 +49,38 @@
           bass, mids, treble, gain control, reverb, and more!
         </p>
       </div>
-      <div class="header-img md:block md:relative -top-3 -right-6 z-10 flex-[(1_1_33%)] hidden w-full">
-        <img src="./dist/assets/bg-pattern-1.svg" alt="" class="scale-110">
+      <div
+        class="header-img md:block md:relative lg:absolute lg:right-0 -top-3 lg:-top-10 -right-6 z-10 flex-[(1_1_33%)] w-full lg:w-auto hidden">
+        <img src="./dist/assets/bg-pattern-1.svg" alt="" class="lg:scale-100 scale-110">
       </div>
     </header>
 
 
     <div
-      class="section bg-customDark rounded-xl -pb-10 relative flex flex-col items-center md:items-start md:mx-9 mt-[166px] text-customLight md:h-[600px]">
-      <div class="section-bgImg relative md:absolute w-[280px] md:-top-8 md:left-[230px]">
+      class="section bg-customDark rounded-xl -pb-10 relative flex flex-col items-center xl:self-center md:items-start md:mx-9 lg:mx-20 mt-[166px] text-customLight md:h-[600px] xl:w-full  xl:max-w-[1100px] lg:mt-[230px] xl:mt-[321px]">
+      <div class="section-bgImg relative md:absolute w-[280px] md:-top-8 md:left-[29%]">
         <img src="./dist/assets/bg-pattern-2.svg" alt="" class="w-full">
       </div>
-      <div class="section-img absolute w-[210px] md:w-[270px] md:left-16 md:-top-[138px] -top-[98px]">
+      <div
+        class="section-img absolute w-[210px] md:w-[270px] xl:w-[312px] md:left-[7%] lg:left-[11%] xl:left-[10%] md:-top-[138px] xl:-top-[213px] -top-[98px]">
         <img src="./dist/assets/illustration-app.png" alt="w-full">
       </div>
       <div
-        class="card rounded-xl bg-customPrimary px-9 md:px-12 md:absolute relative md:w-[400px] -mt-10 md:mt-[150px] md:right-[58px]">
-        <h2 class="text-[32px] font-bold leading-10 mt-12">Premium EQ</h2>
+        class="card rounded-xl bg-customPrimary px-9 md:px-12 xl:px-[54px] md:absolute relative md:w-[400px] xl:w-[446px] -mt-10 md:mt-[150px] xl:mt-[90px] md:right-[11%] lg:right-[14%] xl:right-[11%]">
+        <h2 class="text-[32px] font-bold leading-10 mt-12 xl:mt-[58px] xl:text-[40px]">Premium EQ</h2>
 
-        <p class="md:text-lg md:leading-7 mt-3">Get expert-level control with a robust equalizer, volume mixer, and
+        <p class="md:text-lg md:leading-7 xl:text-xl mt-3 xl:mt-[22px] xl:leading-[34px]">Get expert-level control with
+          a robust
+          equalizer, volume
+          mixer, and
           spatial audio. Take
           your listening experience to a whole new level and access all our incredible features!
         </p>
 
-        <p class="mt-9 flex items-center text-xl leading-8 -tracking-[0.2px]"><span
+        <p class="mt-9 xl:mt-10 flex items-center text-xl leading-8 -tracking-[0.2px]"><span
             class="text-[65px] leading-[52px] font-bold mr-4">$4</span>/ month</p>
 
-        <div class="buttons mt-9 flex flex-col items-stretch gap-4 mb-12">
+        <div class="buttons mt-9 xl:mt-[46px] flex flex-col items-stretch gap-4 mb-12">
           <button
             class="flex justify-center gap-2 text-lg leading-8 -tracking-[0.18px] py-[15px] bg-customDark rounded-xl font-bold hover:bg-customHoverBlue transition-colors">
             <div class="flex items-center">
@@ -89,16 +99,16 @@
       </div>
     </div>
     <footer
-      class="footer text-customDark grid items-center grid-rows-[repeat(3,auto)] md:grid-rows-[repeat(2,auto)] md:grid-cols-2 px-6 md:px-9 mt-16 md:mt-[184px] md:mb-[85px]">
-      <div class="logo md:col-span-2">
+      class="footer text-customDark grid items-center grid-rows-[repeat(3,auto)] xl:max-w-[1100px] xl:px-0 xl:grid-cols-3 xl:self-center md:grid-rows-[repeat(2,auto)] md:grid-cols-2 px-6 md:px-9 lg:px-20 mt-16 md:mt-[184px] lg:mt-[202px] md:mb-[85px] xl:mb-[91px]">
+      <div class="logo md:col-span-2 xl:col-span-1 self-start">
         <img src="./dist/assets/logo.svg" alt="">
       </div>
       <div>
-        <p class="mt-8 leading-[26px]">All rights reserved © Equalizer 2021</p>
+        <p class="mt-8 leading-[26px] xl:mt-0">All rights reserved © Equalizer 2021</p>
         <p>Have any problems? Contact us via social media or email us at <span class="font-bold"">equalizer@example.com</span>
       </p>
       </div>
-      <div class=" social-icons md:justify-self-end flex gap-5 mt-16 mb-10">
+      <div class=" social-icons md:justify-self-end xl:mb-0 xl:mt-0 flex gap-5 mt-16 mb-10">
             <a href="https://www.facebook.com/" target="_blank">
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
                 class="fill-customDark hover:fill-customPrimary active:fill-customPrimary transition-colors cursor-pointer">
